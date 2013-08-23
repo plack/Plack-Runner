@@ -4,6 +4,8 @@ use warnings;
 use parent qw(Exporter);
 our @EXPORT = qw( req_to_psgi res_from_psgi );
 
+our $VERSION = '1.0030';
+
 use Carp ();
 use HTTP::Status qw(status_message);
 use URI::Escape ();

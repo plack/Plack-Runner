@@ -3,6 +3,8 @@ use strict;
 use warnings;
 use Carp ();
 
+our $VERSION = '1.0030';
+
 sub new {
     my($class, %args) = @_;
 

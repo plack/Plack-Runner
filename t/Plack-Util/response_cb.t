@@ -5,6 +5,7 @@ use Plack::Test;
 use Test::More;
 use HTTP::Request::Common;
 
+use Test::Requires 'HTTP::Server::PSGI';
 $Plack::Test::Impl = "Server";
 
 my $app = sub {

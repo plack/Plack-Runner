@@ -2,6 +2,8 @@ package Plack::Util::Accessor;
 use strict;
 use warnings;
 
+our $VERSION = '1.0030';
+
 sub import {
     shift;
     return unless @_;

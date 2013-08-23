@@ -4,6 +4,8 @@ use Carp ();
 use Plack::Util;
 use Try::Tiny;
 
+our $VERSION = '1.0030';
+
 sub new {
     my $class = shift;
     bless {}, $class;

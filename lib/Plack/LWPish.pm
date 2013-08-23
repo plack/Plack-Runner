@@ -5,6 +5,8 @@ use HTTP::Tiny;
 use HTTP::Response;
 use Hash::MultiValue;
 
+our $VERSION = '1.0030';
+
 sub new {
     my $class = shift;
     my $self  = bless {}, $class;

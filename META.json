@@ -1,10 +1,10 @@
 {
-   "abstract" : "Perl Superglue for Web frameworks and Web Servers (PSGI toolkit)",
+   "abstract" : "plackup core",
    "author" : [
       "Tatsuhiko Miyagawa"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 5.014, CPAN::Meta::Converter version 2.140640",
    "license" : [
       "perl_5"
    ],
@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "Plack",
+   "name" : "Plack-Runner",
    "no_index" : {
       "directory" : [
          "t",
@@ -37,11 +37,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Apache::LogFormat::Compiler" : "0.12",
-            "Devel::StackTrace" : "1.23",
-            "Devel::StackTrace::AsHTML" : "0.11",
             "File::ShareDir" : "1.00",
-            "Filesys::Notify::Simple" : "0",
             "HTTP::Body" : "1.06",
             "HTTP::Message" : "5.814",
             "HTTP::Tiny" : "0.034",
@@ -53,14 +49,6 @@
             "URI" : "1.59",
             "parent" : "0",
             "perl" : "5.008001"
-         },
-         "suggests" : {
-            "CGI::Compile" : "0",
-            "CGI::Emulate::PSGI" : "0",
-            "FCGI" : "0",
-            "FCGI::ProcManager" : "0",
-            "IO::Handle::Util" : "0",
-            "LWP::UserAgent" : "5.814"
          }
       },
       "test" : {
@@ -69,42 +57,32 @@
             "Test::Requires" : "0"
          },
          "suggests" : {
-            "Authen::Simple::Passwd" : "0",
-            "CGI::Compile" : "0",
-            "CGI::Emulate::PSGI" : "0",
-            "HTTP::Request::AsCGI" : "0",
-            "HTTP::Server::Simple::PSGI" : "0",
-            "IO::Handle::Util" : "0",
-            "LWP::Protocol::http10" : "0",
-            "LWP::UserAgent" : "5.814",
-            "Log::Log4perl" : "0",
-            "MIME::Types" : "0",
-            "Module::Refresh" : "0"
+            "LWP::UserAgent" : "5.814"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/plack/Plack/issues"
+         "web" : "https://github.com/plack/Plack-Runner/issues"
       },
-      "homepage" : "https://github.com/plack/Plack",
+      "homepage" : "https://github.com/plack/Plack-Runner",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/plack/Plack.git",
-         "web" : "https://github.com/plack/Plack"
+         "url" : "https://github.com/plack/Plack-Runner.git",
+         "web" : "https://github.com/plack/Plack-Runner"
       }
    },
    "version" : "1.0030",
    "x_authority" : "cpan:MIYAGAWA",
    "x_contributors" : [
       "Aaron Trevena <aaron.trevena@gmail.com>",
-      "Alex J. G. Burzy\u0144ski <ajgb@cpan.org>",
+      "Alex J. G. Burzyński <ajgb@cpan.org>",
       "Alexandr Ciornii <alexchorny@gmail.com>",
       "Andrew Rodland <andrew@cleverdomain.org>",
       "Andy Wardley <abw@wardley.org>",
       "Aristotle Pagaltzis <pagaltzis@gmx.de>",
-      "Ask Bj\u00f8rn Hansen <ask@develooper.com>",
+      "Ask Bjørn Hansen <ask@develooper.com>",
       "Ben Morrow <ben@morrow.me.uk>",
       "Bernhard Graf <augensalat@gmail.com>",
       "Chia-liang Kao <clkao@clkao.org>",
@@ -149,7 +127,7 @@
       "Olaf Alders <olaf@wundersolutions.com>",
       "Oliver Gorwits <oliver@cpan.org>",
       "Oliver Paukstadt <pstadt@sourcentral.org>",
-      "Olivier Mengu\u00e9 <dolmen@cpan.org>",
+      "Olivier Mengué <dolmen@cpan.org>",
       "Panu Ervamaa <panu.ervamaa@frantic.com>",
       "Paul Driver <frodwith@gmail.com>",
       "Pedro Melo <melo@simplicidade.org>",
@@ -168,6 +146,7 @@
       "Stevan Little <stevan.little@iinteractive.com>",
       "Stuart A Johnston <saj_git@thecommune.net>",
       "Takeshi OKURA <okura3@gmail.com>",
+      "Tatsuhiko Miyagawa <miyagawa@bulknews.net>",
       "Tokuhiro Matsuno <tokuhirom@gmail.com>",
       "Tom Heady <tom-github.com@punch.net>",
       "Tomas Doran <bobtfish@bobtfish.net>",
@@ -190,8 +169,8 @@
       "vti <viacheslav.t@gmail.com>",
       "xaicron <xaicron@gmail.com>",
       "yappo <yappo@shibuya.pl>",
-      "\u00c6var Arnfj\u00f6r\u00f0 Bjarmason <avarab@gmail.com>",
-      "\u5510\u9cf3 <audreyt@audreyt.org>"
+      "Ævar Arnfjörð Bjarmason <avarab@gmail.com>",
+      "唐鳳 <audreyt@audreyt.org>"
    ]
 }
 

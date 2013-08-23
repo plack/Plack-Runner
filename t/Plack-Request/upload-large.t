@@ -20,12 +20,19 @@ my $app = sub {
     $req->new_response(200)->finalize;
 };
 
-test_psgi $app, sub {
-    my $cb = shift;
-    $cb->(POST "/", Content_Type => 'form-data', Content => [
-             image => [ $file ],
-         ]);
-} while flip_backend;
+while (flip_backend) {
+    SKIP: {
+        skip "HTTP::Server::PSGI is required", 3
+            if $Plack::Test::Impl eq 'Server'
+            && !eval { require HTTP::Server::PSGI };
+        test_psgi $app, sub {
+            my $cb = shift;
+            $cb->(POST "/", Content_Type => 'form-data', Content => [
+                    image => [ $file ],
+                ]);
+        };
+    }
+}
 
 done_testing;
 

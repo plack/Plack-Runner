@@ -1,6 +1,8 @@
 package Plack::Handler;
 use strict;
 
+our $VERSION = '1.0030';
+
 1;
 
 __END__

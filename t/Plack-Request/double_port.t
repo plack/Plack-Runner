@@ -3,6 +3,8 @@ use Plack::Test;
 use Plack::Request;
 use HTTP::Request::Common;
 
+use Test::Requires 'HTTP::Server::PSGI';
+
 $Plack::Test::Impl = 'Server';
 local $ENV{PLACK_SERVER} = "HTTP::Server::PSGI";
 

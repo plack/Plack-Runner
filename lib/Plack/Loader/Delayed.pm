@@ -2,6 +2,8 @@ package Plack::Loader::Delayed;
 use strict;
 use parent qw(Plack::Loader);
 
+our $VERSION = '1.0030';
+
 sub preload_app {
     my($self, $builder) = @_;
     $self->{builder} = $builder;

@@ -2,9 +2,10 @@ package Plack::Middleware::Lint;
 use strict;
 no warnings;
 use Carp ();
-use parent qw(Plack::Middleware);
 use Scalar::Util qw(blessed);
 use Plack::Util;
+
+our $VERSION = '1.0030';
 
 sub wrap {
     my($self, $app) = @_;
@@ -13,16 +14,13 @@ sub wrap {
         die("PSGI app should be a code reference: ", (defined $app ? $app : "undef"));
     }
 
-    $self->SUPER::wrap($app);
-}
+    return sub {
+        my $env = shift;
 
-sub call {
-    my $self = shift;
-    my $env = shift;
-
-    $self->validate_env($env);
-    my $res = $self->app->($env);
-    return $self->validate_res($res);
+        $self->validate_env($env);
+        my $res = $app->($env);
+        return $self->validate_res($res);
+    };
 }
 
 sub validate_env {
@@ -105,7 +103,7 @@ sub validate_res {
     }
 
     if (ref $res eq 'CODE') {
-        return $self->response_cb($res, sub { $self->validate_res(@_, 1) });
+        return Plack::Util::response_cb($res, sub { $self->validate_res(@_, 1) });
     }
 
     unless (@$res == 3 || ($streaming && @$res == 2)) {
