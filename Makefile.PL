@@ -11,25 +11,21 @@ install_share dist => "share";
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Perl Superglue for Web frameworks and Web Servers (PSGI toolkit)",
+  "ABSTRACT" => "plackup core",
   "AUTHOR" => "Tatsuhiko Miyagawa",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30",
     "File::ShareDir::Install" => "0.03"
   },
-  "DISTNAME" => "Plack",
+  "DISTNAME" => "Plack-Runner",
   "EXE_FILES" => [
     "script/plackup"
   ],
   "LICENSE" => "perl",
-  "NAME" => "Plack",
+  "NAME" => "Plack::Runner",
   "PREREQ_PM" => {
-    "Apache::LogFormat::Compiler" => "0.12",
-    "Devel::StackTrace" => "1.23",
-    "Devel::StackTrace::AsHTML" => "0.11",
     "File::ShareDir" => "1.00",
-    "Filesys::Notify::Simple" => 0,
     "HTTP::Body" => "1.06",
     "HTTP::Message" => "5.814",
     "HTTP::Tiny" => "0.034",
@@ -47,7 +43,7 @@ my %WriteMakefileArgs = (
   },
   "VERSION" => "1.0029",
   "test" => {
-    "TESTS" => "t/*.t t/HTTP-Message-PSGI/*.t t/HTTP-Server-PSGI/*.t t/Plack-Builder/*.t t/Plack-HTTPParser-PP/*.t t/Plack-Handler/*.t t/Plack-Loader/*.t t/Plack-MIME/*.t t/Plack-Middleware/*.t t/Plack-Middleware/cascade/*.t t/Plack-Middleware/recursive/*.t t/Plack-Middleware/stacktrace/*.t t/Plack-Request/*.t t/Plack-Response/*.t t/Plack-Runner/*.t t/Plack-TempBuffer/*.t t/Plack-Test/*.t t/Plack-Util/*.t"
+    "TESTS" => "t/*.t t/HTTP-Message-PSGI/*.t t/Plack-Loader/*.t t/Plack-Request/*.t t/Plack-Response/*.t t/Plack-Runner/*.t t/Plack-Test/*.t t/Plack-Util/*.t"
   }
 );
 

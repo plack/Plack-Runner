@@ -22,7 +22,7 @@ use Test::More;
 {
     my $app = Plack::Util::load_psgi("t/Plack-Util/bad2.psgi");
     ok $app;
-    eval { Plack::Util::load_class("Plack") };
+    eval { Plack::Util::load_class("Plack::Runner") };
     is $@, '';
 }
 

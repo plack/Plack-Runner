@@ -8,6 +8,8 @@ use Test::TCP qw(empty_port);
 
 plan skip_all => "release test only" unless $ENV{RELEASE_TESTING};
 
+use Test::Requires 'Plack::App::URLMap';
+
 sub write_file($$){
     my ( $path, $content ) = @_;
     open my $out, '>', $path or die "$path: $!";
@@ -23,7 +25,7 @@ my $port = empty_port();
 my $pid = fork;
 if ($pid == 0) {
     close STDERR;
-    exec($^X, '-Ilib', 'script/plackup', '-p', $port, '--path', '/app/', '-a', $psgi_file) or die $@;
+    exec($^X, '-Ilib', 'script/plackup', '-E', 'production', '-p', $port, '--path', '/app/', '-a', $psgi_file) or die $@;
 } else {
     $SIG{INT} = 'IGNORE';
     sleep 1;

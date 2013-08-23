@@ -1,5 +1,5 @@
 {
-   "abstract" : "Perl Superglue for Web frameworks and Web Servers (PSGI toolkit)",
+   "abstract" : "plackup core",
    "author" : [
       "Tatsuhiko Miyagawa"
    ],
@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "Plack",
+   "name" : "Plack-Runner",
    "no_index" : {
       "directory" : [
          "t",
@@ -37,11 +37,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Apache::LogFormat::Compiler" : "0.12",
-            "Devel::StackTrace" : "1.23",
-            "Devel::StackTrace::AsHTML" : "0.11",
             "File::ShareDir" : "1.00",
-            "Filesys::Notify::Simple" : "0",
             "HTTP::Body" : "1.06",
             "HTTP::Message" : "5.814",
             "HTTP::Tiny" : "0.034",
@@ -53,14 +49,6 @@
             "URI" : "1.59",
             "parent" : "0",
             "perl" : "5.008001"
-         },
-         "suggests" : {
-            "CGI::Compile" : "0",
-            "CGI::Emulate::PSGI" : "0",
-            "FCGI" : "0",
-            "FCGI::ProcManager" : "0",
-            "IO::Handle::Util" : "0",
-            "LWP::UserAgent" : "5.814"
          }
       },
       "test" : {
@@ -69,30 +57,20 @@
             "Test::Requires" : "0"
          },
          "suggests" : {
-            "Authen::Simple::Passwd" : "0",
-            "CGI::Compile" : "0",
-            "CGI::Emulate::PSGI" : "0",
-            "HTTP::Request::AsCGI" : "0",
-            "HTTP::Server::Simple::PSGI" : "0",
-            "IO::Handle::Util" : "0",
-            "LWP::Protocol::http10" : "0",
-            "LWP::UserAgent" : "5.814",
-            "Log::Log4perl" : "0",
-            "MIME::Types" : "0",
-            "Module::Refresh" : "0"
+            "LWP::UserAgent" : "5.814"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/plack/Plack/issues"
+         "web" : "https://github.com/plack/Plack-Runner/issues"
       },
-      "homepage" : "https://github.com/plack/Plack",
+      "homepage" : "https://github.com/plack/Plack-Runner",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/plack/Plack.git",
-         "web" : "https://github.com/plack/Plack"
+         "url" : "https://github.com/plack/Plack-Runner.git",
+         "web" : "https://github.com/plack/Plack-Runner"
       }
    },
    "version" : "1.0029",

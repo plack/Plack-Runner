@@ -3,7 +3,6 @@ use warnings;
 use Test::More;
 use FindBin;
 use HTTP::Message::PSGI;
-use Plack;
 use Plack::Test::Suite;
 use Plack::Util;
 

@@ -14,7 +14,7 @@ use Plack::Request;
 use Try::Tiny;
 use Plack::LWPish;
 
-my $share_dir = try { File::ShareDir::dist_dir('Plack') } || 'share';
+my $share_dir = try { File::ShareDir::dist_dir('Plack-Runner') } || 'share';
 
 $ENV{PLACK_TEST_SCRIPT_NAME} = '';
 

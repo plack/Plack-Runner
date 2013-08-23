@@ -1,8 +1,6 @@
 use strict;
 use Test::More;
 use Plack::Test;
-use Plack::App::URLMap;
-use Plack::Test;
 use Plack::Request;
 use HTTP::Request::Common;
 
@@ -14,11 +12,18 @@ my $path_app = sub {
     return $res->finalize;
 };
 
-my $app = Plack::App::URLMap->new;
-$app->map("/foo" => $path_app);
-$app->map("/" => $path_app);
+my $app = sub {
+    my $wrapped = shift;
+    return sub {
+        my $env = shift;
+        if ($env->{PATH_INFO} =~ s{^/foo}{}) {
+            $env->{SCRIPT_NAME} .= '/foo';
+        }
+        $wrapped->($env);
+    }
+}->($path_app);
 
-test_psgi app => $app->to_app, client => sub {
+test_psgi app => $app, client => sub {
     my $cb = shift;
 
     my $res = $cb->(GET "http://localhost/foo");

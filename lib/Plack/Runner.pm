@@ -4,6 +4,10 @@ use warnings;
 use Carp ();
 use Plack::Util;
 use Try::Tiny;
+use 5.008_001;
+
+our $VERSION = '1.0029';
+$VERSION = eval $VERSION;
 
 sub new {
     my $class = shift;
@@ -338,6 +342,67 @@ plackup.
 =head1 SEE ALSO
 
 L<plackup>
+
+=head1 AUTHOR
+
+Tatsuhiko Miyagawa
+
+=head1 COPYRIGHT
+
+The following copyright notice applies to all the files provided in
+this distribution, including binary files, unless explicitly noted
+otherwise.
+
+Copyright 2009-2013 Tatsuhiko Miyagawa
+
+=head1 CORE DEVELOPERS
+
+Tatsuhiko Miyagawa (miyagawa)
+
+Tokuhiro Matsuno (tokuhirom)
+
+Jesse Luehrs (doy)
+
+Tomas Doran (bobtfish)
+
+Graham Knop (haarg)
+
+=head1 CONTRIBUTORS
+
+Yuval Kogman (nothingmuch)
+
+Kazuhiro Osawa (Yappo)
+
+Kazuho Oku
+
+Florian Ragwitz (rafl)
+
+Chia-liang Kao (clkao)
+
+Masahiro Honma (hiratara)
+
+Daisuke Murase (typester)
+
+John Beppu
+
+Matt S Trout (mst)
+
+Shawn M Moore (Sartak)
+
+Stevan Little
+
+Hans Dieter Pearcey (confound)
+
+mala
+
+Mark Stosberg
+
+Aaron Trevena
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
 
 =cut
 
