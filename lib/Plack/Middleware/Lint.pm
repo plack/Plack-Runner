@@ -101,7 +101,7 @@ sub validate_res {
     }
 
     if (ref $res eq 'CODE') {
-        return $self->response_cb($res, sub { $self->validate_res(@_, 1) });
+        return Plack::Util::response_cb($res, sub { $self->validate_res(@_, 1) });
     }
 
     unless (@$res == 3 || ($streaming && @$res == 2)) {
