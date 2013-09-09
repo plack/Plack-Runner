@@ -2,7 +2,6 @@ package Plack::Handler;
 use strict;
 
 our $VERSION = '1.0029';
-$VERSION = eval $VERSION;
 
 1;
 

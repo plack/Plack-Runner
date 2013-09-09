@@ -6,7 +6,6 @@ use HTTP::Response;
 use Hash::MultiValue;
 
 our $VERSION = '1.0029';
-$VERSION = eval $VERSION;
 
 sub new {
     my $class = shift;

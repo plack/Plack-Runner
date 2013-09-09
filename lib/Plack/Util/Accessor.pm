@@ -3,7 +3,6 @@ use strict;
 use warnings;
 
 our $VERSION = '1.0029';
-$VERSION = eval $VERSION;
 
 sub import {
     shift;

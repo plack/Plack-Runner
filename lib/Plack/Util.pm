@@ -7,7 +7,6 @@ use overload ();
 use File::Spec ();
 
 our $VERSION = '1.0029';
-$VERSION = eval $VERSION;
 
 sub TRUE()  { 1==1 }
 sub FALSE() { !TRUE }
