@@ -4,7 +4,7 @@
       "Tatsuhiko Miyagawa"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 5.014, CPAN::Meta::Converter version 2.140640",
    "license" : [
       "perl_5"
    ],
@@ -73,16 +73,16 @@
          "web" : "https://github.com/plack/Plack-Runner"
       }
    },
-   "version" : "1.0029",
+   "version" : "1.0030",
    "x_authority" : "cpan:MIYAGAWA",
    "x_contributors" : [
       "Aaron Trevena <aaron.trevena@gmail.com>",
-      "Alex J. G. Burzy\u0144ski <ajgb@cpan.org>",
+      "Alex J. G. Burzyński <ajgb@cpan.org>",
       "Alexandr Ciornii <alexchorny@gmail.com>",
       "Andrew Rodland <andrew@cleverdomain.org>",
       "Andy Wardley <abw@wardley.org>",
       "Aristotle Pagaltzis <pagaltzis@gmx.de>",
-      "Ask Bj\u00f8rn Hansen <ask@develooper.com>",
+      "Ask Bjørn Hansen <ask@develooper.com>",
       "Bernhard Graf <augensalat@gmail.com>",
       "Chia-liang Kao <clkao@clkao.org>",
       "Christian Walde <walde.christian@googlemail.com>",
@@ -125,7 +125,7 @@
       "Nobuo Danjou <nobuo.danjou@gmail.com>",
       "Oliver Gorwits <oliver@cpan.org>",
       "Oliver Paukstadt <pstadt@sourcentral.org>",
-      "Olivier Mengu\u00e9 <dolmen@cpan.org>",
+      "Olivier Mengué <dolmen@cpan.org>",
       "Panu Ervamaa <panu.ervamaa@frantic.com>",
       "Paul Driver <frodwith@gmail.com>",
       "Pedro Melo <melo@simplicidade.org>",
@@ -144,6 +144,7 @@
       "Stevan Little <stevan.little@iinteractive.com>",
       "Stuart A Johnston <saj_git@thecommune.net>",
       "Takeshi OKURA <okura3@gmail.com>",
+      "Tatsuhiko Miyagawa <miyagawa@bulknews.net>",
       "Tokuhiro Matsuno <tokuhirom@gmail.com>",
       "Tom Heady <tom-github.com@punch.net>",
       "Tomas Doran <bobtfish@bobtfish.net>",
@@ -166,8 +167,8 @@
       "vti <viacheslav.t@gmail.com>",
       "xaicron <xaicron@gmail.com>",
       "yappo <yappo@shibuya.pl>",
-      "\u00c6var Arnfj\u00f6r\u00f0 Bjarmason <avarab@gmail.com>",
-      "\u5510\u9cf3 <audreyt@audreyt.org>"
+      "Ævar Arnfjörð Bjarmason <avarab@gmail.com>",
+      "唐鳳 <audreyt@audreyt.org>"
    ]
 }
 

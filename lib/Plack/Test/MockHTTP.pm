@@ -2,7 +2,7 @@ package Plack::Test::MockHTTP;
 use strict;
 use warnings;
 
-our $VERSION = '1.0029';
+our $VERSION = '1.0030';
 
 use Carp;
 use HTTP::Request;

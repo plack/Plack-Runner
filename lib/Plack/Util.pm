@@ -6,7 +6,7 @@ use IO::Handle;
 use overload ();
 use File::Spec ();
 
-our $VERSION = '1.0029';
+our $VERSION = '1.0030';
 
 sub TRUE()  { 1==1 }
 sub FALSE() { !TRUE }

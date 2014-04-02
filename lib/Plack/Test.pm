@@ -5,7 +5,7 @@ use Carp;
 use parent qw(Exporter);
 our @EXPORT = qw(test_psgi);
 
-our $VERSION = '1.0029';
+our $VERSION = '1.0030';
 
 our $Impl;
 $Impl ||= $ENV{PLACK_TEST_IMPL} || "MockHTTP";

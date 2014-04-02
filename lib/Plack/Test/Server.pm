@@ -8,7 +8,7 @@ use Test::TCP;
 use Plack::Loader;
 use Plack::LWPish;
 
-our $VERSION = '1.0029';
+our $VERSION = '1.0030';
 
 sub new {
     my($class, $app, %args) = @_;

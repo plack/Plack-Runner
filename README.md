@@ -14,24 +14,24 @@ Plack::Runner - plackup core
 
 # DESCRIPTION
 
-Plack::Runner is the core of [plackup](http://search.cpan.org/perldoc?plackup) runner script. You can create
+Plack::Runner is the core of [plackup](https://metacpan.org/pod/plackup) runner script. You can create
 your own frontend to run your application or framework, munge command
 line options and pass that to `run` method of this class.
 
-`run` method does exactly the same thing as the [plackup](http://search.cpan.org/perldoc?plackup) script
+`run` method does exactly the same thing as the [plackup](https://metacpan.org/pod/plackup) script
 does, but one notable addition is that you can pass a PSGI application
 code reference directly to the method, rather than via `.psgi`
 file path or with `-e` switch. This would be useful if you want to
 make an installable PSGI application.
 
 Also, when `-h` or `--help` switch is passed, the usage text is
-automatically extracted from your own script using [Pod::Usage](http://search.cpan.org/perldoc?Pod::Usage).
+automatically extracted from your own script using [Pod::Usage](https://metacpan.org/pod/Pod::Usage).
 
 # NOTES
 
 Do not directly call this module from your `.psgi`, since that makes
-your PSGI application unnecessarily depend on [plackup](http://search.cpan.org/perldoc?plackup) and won't run
-other backends like [Plack::Handler::Apache2](http://search.cpan.org/perldoc?Plack::Handler::Apache2) or mod\_psgi.
+your PSGI application unnecessarily depend on [plackup](https://metacpan.org/pod/plackup) and won't run
+other backends like [Plack::Handler::Apache2](https://metacpan.org/pod/Plack::Handler::Apache2) or mod\_psgi.
 
 If you _really_ want to make your `.psgi` runnable as a standalone
 script, you can do this:
@@ -54,7 +54,7 @@ plackup.
 
 # SEE ALSO
 
-[plackup](http://search.cpan.org/perldoc?plackup)
+[plackup](https://metacpan.org/pod/plackup)
 
 # AUTHOR
 

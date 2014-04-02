@@ -5,7 +5,7 @@ use Carp ();
 use Scalar::Util qw(blessed);
 use Plack::Util;
 
-our $VERSION = '1.0029';
+our $VERSION = '1.0030';
 
 sub wrap {
     my($self, $app) = @_;

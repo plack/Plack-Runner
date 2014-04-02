@@ -14,7 +14,7 @@ use Plack::Request;
 use Try::Tiny;
 use Plack::LWPish;
 
-our $VERSION = '1.0029';
+our $VERSION = '1.0030';
 
 my $share_dir = try { File::ShareDir::dist_dir('Plack-Runner') } || 'share';
 
